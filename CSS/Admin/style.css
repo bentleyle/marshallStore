@@ -1,0 +1,205 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+input,
+select,
+textarea {
+  background-color: transparent;
+  outline: none;
+}
+button {
+  cursor: pointer;
+  background-color: transparent;
+  outline: none;
+  border: 0;
+}
+body {
+  min-height: 100vh;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+}
+
+.container {
+  width: 100%;
+}
+
+.admin_main {
+  display: flex;
+  width: 100%;
+}
+
+.admin_main-left {
+  width: 25%;
+  height: 1200px;
+  background-color: black;
+  padding: 20px;
+}
+
+.controlTittle {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.controlTittle h2 {
+  color: white;
+  margin-left: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.boxHandle {
+  display: flex;
+  align-items: center;
+  padding: 50px;
+  transition: 0.2s;
+  width: 70%;
+}
+
+.boxHandle a {
+  margin-left: 30px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+}
+
+.boxHandle:hover {
+  background-color: white;
+  border-radius: 20px;
+  padding: 50px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.boxHandle:hover a {
+  color: black;
+}
+
+.boxHandle:hover img {
+  transform: scale(2);
+}
+
+.admin_main-right {
+  width: 75%;
+  height: 1200px;
+  background-color: white;
+  padding: 20px;
+}
+
+.admin_Manage {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.boxManage {
+  width: 330px;
+  border: 3px solid rgb(24, 119, 242);
+  border-radius: 15px;
+  height: 130px;
+  padding: 15px;
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: 0.3s;
+}
+
+.statiscal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.statiscal p {
+  color: black;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  padding: 20px;
+}
+
+.boxManage:hover {
+  box-shadow: 0px 10px 10px 0px rgba(24, 119, 242, 1.75);
+  cursor: pointer;
+}
+
+table,
+td,
+th {
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 50px;
+  font-size: 20px;
+}
+thead th {
+  font-weight: bold;
+}
+tbody a {
+  text-decoration: none;
+  color: black;
+}
+
+tbody a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+th,
+td {
+  padding: 10px;
+}
+.mostBuy {
+  color: white;
+  background-color: black;
+  display: inline;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 10px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+  position: absolute;
+  top: 280;
+}
+
+.sum {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+.sum h1 {
+  font-weight: bold;
+  color: black;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
+}
+
+.sum p {
+  color: green;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+}

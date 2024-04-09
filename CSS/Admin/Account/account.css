@@ -1,0 +1,110 @@
+@import url("../SideBar/sidebar.css");
+@import url("../Content/content.css");
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+input,
+select,
+textarea {
+  background-color: transparent;
+  outline: none;
+}
+button {
+  cursor: pointer;
+  background-color: transparent;
+  outline: none;
+  border: 0;
+}
+body {
+  min-height: 100vh;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+}
+
+.admin_main {
+  display: flex;
+  width: 100%;
+}
+
+table,
+td,
+th {
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 10px;
+  font-size: 20px;
+}
+thead th {
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+tbody a {
+  text-decoration: none;
+  color: black;
+}
+
+tbody a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+th,
+td {
+  padding: 10px;
+}
+
+.title_Page {
+  padding: 20px;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 10px;
+  font-size: 20px;
+  width: 500px;
+  text-align: center;
+}
+
+.admintitle {
+  background-color: #de4a3e;
+  text-align: center;
+  width: 220px;
+  padding: 20px;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.usertitle {
+  margin-top: 30px;
+  background-color: green;
+  text-align: center;
+  width: 220px;
+  padding: 20px;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 10px;
+}

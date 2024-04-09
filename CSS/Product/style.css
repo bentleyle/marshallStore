@@ -1,0 +1,211 @@
+/* MENU */
+@import "../../CSS/Menu-MenuAuth/menu.css";
+/* MODAL */
+@import "../../CSS/Modal-FormBox/modal.css";
+/* MAIN */
+@import "../../CSS/Main/main.css";
+/* FOOTER */
+@import "../../CSS/Footer/footer.css";
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+input,
+select,
+textarea {
+  background-color: transparent;
+  outline: none;
+}
+button {
+  cursor: pointer;
+  background-color: transparent;
+  outline: none;
+  border: 0;
+}
+body {
+  min-height: 100vh;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+}
+
+.filter_product {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.btn_aboutProduct button {
+  background-color: black;
+  color: gray;
+  padding: 10px;
+  border-radius: 10px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.btn_aboutProduct span {
+  color: white;
+  font-weight: bold;
+}
+
+.filter_box {
+  display: flex;
+  align-items: center;
+  margin-left: 90px;
+  width: 100%;
+}
+.filter_box input {
+  width: 32.8%;
+  border: 1px solid black;
+  height: 40px;
+  border-radius: 10px;
+}
+.filter_box input:focus-visible {
+  outline: none;
+}
+.filter_color,
+.filter_box {
+  /* width: 200px; */
+}
+
+.btn_filter {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  background-color: black;
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  width: 80px;
+}
+.portableSpeaker {
+  margin-top: 30px;
+}
+.product_box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px; /* Thêm margin-bottom cho khoảng cách dưới */
+}
+
+.side_box_product {
+  position: relative;
+  width: 300px;
+  height: 450px;
+  top: 0;
+  margin-bottom: 20px;
+}
+
+.product {
+  width: 300px;
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  height: 450px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.5);
+  transition: 0.2s;
+  background-color: white;
+  position: absolute;
+  /* Đặt z-index cao hơn so với .side_box_product */
+  z-index: 2;
+}
+
+/* Đặt hover effect cho .product */
+.product:hover {
+  /* transform: scale(1.1); Ví dụ: làm to hơn khi hover */
+  z-index: 3; /* Đảm bảo .product có z-index cao hơn khi hover */
+}
+.boxProduct_img {
+  position: relative;
+}
+.img_product {
+  margin-top: 10px;
+}
+.decal {
+  position: absolute;
+  top: 10;
+  left: 10;
+}
+.product_info {
+  margin-left: 15px;
+}
+.nameProduct {
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.descProduct {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: gray;
+  font-size: 13px;
+  margin-top: 13px;
+}
+
+.stock_product {
+  display: flex;
+  margin-top: 10px;
+  align-items: center;
+}
+
+.stock_product p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-left: 5px;
+}
+
+.priceProduct {
+  margin-top: 12px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.btn_buyProduct {
+  width: 100%;
+  margin-top: 20px;
+  color: white;
+  background-color: black;
+  text-decoration: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  height: 40px;
+  border-radius: 10px;
+}
+
+.btn_buyProduct:hover {
+  opacity: 80%;
+  transition: 0.5s;
+}
+
+/* TAB */
+.tab_item.is-show {
+  color: white;
+}
+.cartIcon {
+  position: relative;
+}
+.amountProduct {
+  position: absolute;
+  top: -5;
+  left: 50%;
+  background-color: red;
+  padding: 5px;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  text-align: center;
+  display: none;
+}

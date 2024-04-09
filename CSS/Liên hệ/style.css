@@ -1,0 +1,71 @@
+/* MENU */
+@import "../../CSS/Menu-MenuAuth/menu.css";
+/* MODAL */
+@import "../../CSS/Modal-FormBox/modal.css";
+/* MAIN */
+@import "../../CSS/Main/main.css";
+/* FOOTER */
+@import "../../CSS/Footer/footer.css";
+
+.btn_aboutProduct button {
+  background-color: black;
+  color: gray;
+  padding: 10px;
+  border-radius: 10px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 20px;
+}
+.btn_aboutProduct span {
+  color: white;
+  font-weight: bold;
+}
+
+.supportProblem {
+  margin-top: 20px;
+  border: 1px solid black;
+  height: 520px;
+  border-radius: 10px;
+}
+
+.content_form {
+  padding: 10px;
+}
+
+.content_form h2 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.input_supportForm {
+  border: 1px solid #9d9898;
+  color: black;
+  width: 350px;
+  margin-top: 10px;
+}
+
+textarea {
+  width: 1250px;
+  height: 225px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.btnSubmit_contact {
+  background-color: black;
+  color: white;
+  width: 150px;
+  text-transform: uppercase;
+  font-weight: bold;
+  float: right;
+  margin-right: 25px;
+  cursor: pointer;
+}
+.btnSubmit_contact:hover {
+  opacity: 80%;
+  color: gray;
+  transition: 0.2s;
+}

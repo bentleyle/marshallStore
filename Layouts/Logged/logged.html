@@ -1,0 +1,359 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../../index.css" />
+    <!-- ISTOK FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Istok+Web:wght@700&display=swap"
+      rel="stylesheet" />
+    <!-- INTER FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet" />
+    <!-- FONT AWNSOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="bgr inactive"></div>
+      <!-- MENU -->
+      <div class="menu">
+        <div class="menu_leftItem">
+          <img src="../../Image/icon1_menu.png" width="50" height="40" alt="" />
+          <p>
+            Số 11 đường Ven Sông Lừ, Đông Tác, P. Kim Liên, Đống Đa, Hà Nội.
+          </p>
+        </div>
+        <div class="menu_centerItem">
+          <img src="../../Image/logo_menu.png" width="250px" alt="" />
+        </div>
+        <div class="menu_rightItem">
+          <img src="../../Image/icon2_menu.png" width="50" alt="" />
+          <div class="phone_menuText">
+            <p>085.4027.271</p>
+            <p>038.4985.33</p>
+          </div>
+        </div>
+      </div>
+      <!-- FORM BOX -->
+      <div class="form-box">
+        <div class="header_form">
+          <h3 class="tittle">Đăng nhập</h3>
+          <img
+            class="close_modal"
+            src="../../Image/cancel.png"
+            width="29"
+            height="29"
+            alt="" />
+        </div>
+        <div class="img_logo">
+          <img
+            src="../../Image/logo_footer.png"
+            width="100"
+            alt=""
+            class="logo" />
+        </div>
+        <hr />
+        <form action="">
+          <div class="input-group">
+            <div class="input-field" id="name-field">
+              <p>Nhập tên của bạn</p>
+              <input id="username" type="text" placeholder="" />
+              <img src="../../Image/user 1.png" width="15" alt="" />
+              <p class="error_text" style="margin-top: 10px; color: red"></p>
+            </div>
+            <div class="input-field">
+              <p>Nhập địa chỉ email của bạn</p>
+              <input id="email" type="email" placeholder="" />
+              <img src="../../Image/email.png" width="15" alt="" />
+              <p class="error_text" style="margin-top: 10px; color: red"></p>
+            </div>
+            <div class="input-field">
+              <p>Nhập mật khẩu của bạn</p>
+              <input
+                id="password"
+                class="input_pass"
+                type="password"
+                placeholder="" />
+              <i class="fa-solid fa-eye-slash passIcon"></i>
+              <p class="error_text" style="margin-top: 10px; color: red"></p>
+            </div>
+            <div class="support_account">
+              <div class="forgot_account">
+                <a href="">Quên mật khẩu?</a>
+              </div>
+            </div>
+            <div class="btn_control">
+              <a id="login" class="textAuth">Login</a>
+              <a style="display: none" id="register" class="textAuth"
+                >Register</a
+              >
+            </div>
+            <p class="support_signUp" id="signUp-field">
+              Nếu bạn chưa có tài khoản. Vui lòng?
+              <strong><a id="linkRegis">Đăng ký</a></strong>
+            </p>
+            <p class="support_signIn isActive" id="signIn-field">
+              Nếu bạn đã có tài khoản. Vui lòng?
+              <strong><a id="linkLogin" href="#">Đăng nhập</a></strong>
+            </p>
+          </div>
+        </form>
+      </div>
+      <!-- MENU AUTH -->
+      <div class="menu_auth">
+        <div class="menu_authLeftItem">
+          <a href=".../../.../../index.html">
+            <img
+              src=".../../.../../Image/icon_menuAuth.png"
+              width="66"
+              height="40"
+              alt="" />
+          </a>
+          <a href="../../Layouts/Product/product.html#loa">LOA MARSHALL</a>
+          <a href="../../Layouts/Product/product.html#tai-nghe"
+            >TAI NGHE MARSHALL</a
+          >
+          <a href="">BLOG </a>
+          <a href="">LIÊN HỆ</a>
+        </div>
+        <div class="menu_authRightItem">
+          <div class="input_search">
+            <input style="margin: 0" type="text" />
+            <img
+              class="search_icon"
+              src="../../Image/iconSearch_menuAuth.png"
+              width="15"
+              alt="" />
+          </div>
+          <img
+            class="user_icon"
+            src="../../Image/user_menuauth.png"
+            width="42"
+            height="42"
+            alt="" />
+          <p class="text_displayUser" style="color: white"></p>
+          <img
+            class="cart_icon"
+            src="../../Image/cart_menuauth.png"
+            width="42"
+            height="42"
+            alt="" />
+          <p id="display_name"></p>
+          <p id="logOut" style="margin-left: 10px"></p>
+        </div>
+      </div>
+      <!-- CONTENT -->
+      <div class="content_Page">
+        <div class="background_img">
+          <img
+            src="/Image/background_img1.png"
+            width="1300"
+            height="415"
+            alt="" />
+          <div class="text_bgnImg">
+            <h2>ALL SPEAKER</h2>
+            <p>THƯỞNG THỰC ÂM THANH TẠI NHÀ VÀ TRÊN ĐƯỜNG PHỐ</p>
+          </div>
+        </div>
+        <!-- HOT PRODUCT -->
+        <div class="hot_Product">
+          <div class="button_boxx">
+            <a href="" class="button_product">SẢN PHẨM HOT</a>
+            <a href="" class="button_watch">Xem tất cả > </a>
+          </div>
+          <div class="product_box"></div>
+        </div>
+        <!-- PORTABLE SPEAKER -->
+        <div class="portableSpeaker">
+          <div style="margin-top: 30px" class="button_boxx">
+            <a href="" class="button_product">SẢN PHẨM MỚI LOA DI ĐỘNG</a>
+          </div>
+          <div class="background_imgProduct">
+            <img
+              src="/Image/background_img2.png"
+              width="1300"
+              height="500"
+              alt="" />
+            <div class="text_bgnImgProduct">
+              <h2>LOA DI ĐỘNG</h2>
+              <p style="width: 583px">
+                Mang âm thanh đặc trưng của Marshall đi khắp mọi nơi bằng loa di
+                động và giữ cho âm nhạc của bạn tiếp tục hàng giờ liền.
+              </p>
+            </div>
+          </div>
+          <div style="margin-top: 10px" class="button_watchProducts">
+            <a href="" class="button_watch">Xem tất cả > </a>
+          </div>
+          <div id="portableSpeaker" class="product_box"></div>
+        </div>
+        <!-- HOME SPEAKER -->
+        <div class="homeSpeaker">
+          <div style="margin-top: 30px" class="button_boxx">
+            <a href="" class="button_product">Loa trong nhà</a>
+          </div>
+          <div class="background_imgProduct">
+            <img
+              src="/Image/background_img3png.png"
+              width="1300"
+              height="500"
+              alt="" />
+            <div style="bottom: 0" class="text_bgnImgProduct">
+              <h2>LOA NGHE TRONG NHÀ</h2>
+              <p style="width: 583px">
+                Đắm chìm trong âm nhạc của bạn và trải nghiệm âm thanh sân khấu
+                lớn trong sự thoải mái tại nhà của bạn.
+              </p>
+            </div>
+          </div>
+          <div style="margin-top: 10px" class="button_watchProducts">
+            <a href="" class="button_watch">Xem tất cả > </a>
+          </div>
+          <div id="homeSpeaker" class="product_box"></div>
+        </div>
+        <!-- HEAD PHONE -->
+        <div class="Headphone">
+          <div style="margin-top: 30px" class="button_boxx">
+            <a href="" class="button_product">Tai nghe Marshall</a>
+          </div>
+          <div class="background_imgProduct">
+            <img
+              src="/Image/background_img4.png"
+              width="1300"
+              height="500"
+              alt="" />
+            <div style="bottom: 0" class="text_bgnImgProduct">
+              <h2>TAI NGHE MARSHALL</h2>
+              <p style="width: 380">
+                CHO CHÚNG TÔI ĐÔI TAI CỦA BẠN VÀ CHÚNG TÔI SẼ GIÚP BẠN NGHE MỘT
+                BÀI NHẠC
+              </p>
+            </div>
+          </div>
+          <div style="margin-top: 10px" class="button_watchProducts">
+            <a href="" class="button_watch">Xem tất cả > </a>
+          </div>
+          <div id="HeadPhone" class="product_box"></div>
+        </div>
+        <!-- NEWS -->
+        <div class="news">
+          <h2>TIN TỨC</h2>
+          <div class="newsBox_main">
+            <div class="newBox">
+              <img
+                src="../../Image/newimg1.png"
+                width="615"
+                height="160"
+                alt=""
+                class="img_new" />
+              <div class="content_new">
+                <p class="new_name">The only truth Music</p>
+                <p class="desc_new">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Culpa qui beatae doloremque voluptates temporibus, ratione
+                  obcaecati modi rerum quis illo
+                </p>
+                <a class="continue_readingNew" href="">Continue reading > </a>
+              </div>
+            </div>
+            <div class="newBox">
+              <img
+                src="../../Image/newimg2.png"
+                width="615"
+                height="160"
+                alt=""
+                class="img_new" />
+              <div class="content_new">
+                <p class="new_name">The only truth Music</p>
+                <p class="desc_new">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Culpa qui beatae doloremque voluptates temporibus, ratione
+                  obcaecati modi rerum quis illo
+                </p>
+                <a class="continue_readingNew" href="">Continue reading > </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- FOOTER -->
+      <div class="Footer">
+        <div class="content_Footer">
+          <div class="boxContent_Footer">
+            <div class="img_box">
+              <img
+                src="../../Image/logo_footer.png"
+                width="200"
+                height="52"
+                alt="" />
+            </div>
+            <p class="desc_footer">
+              Marshall Store Vietnam mong muốn đem đến những sản phẩm đẹp, chất
+              lượng cùng những câu chuyện và những trải nghiệm mới mẻ cho khách
+              hàng của mình với dịch vụ tốt nhất.
+            </p>
+            <p class="text_Sub">Subscribe</p>
+          </div>
+          <div class="boxContent_Footer">
+            <div class="text_categories">
+              <p>Categories</p>
+            </div>
+            <ul class="categories_item">
+              <li class="categories_link"><a href="">Portable Speakers </a></li>
+              <li class="categories_link"><a href="">Home Speakers </a></li>
+              <li class="categories_link"><a href="">Headphones </a></li>
+              <li class="categories_link"><a href="">Phụ kiện Marshall</a></li>
+            </ul>
+          </div>
+          <div class="boxContent_Footer">
+            <div class="text_categories">
+              <p>Contact US</p>
+            </div>
+            <ul class="categories_item">
+              <li class="categories_link"><a href="">Portable Speakers </a></li>
+              <li class="categories_link"><a href="">Home Speakers </a></li>
+              <li class="categories_link"><a href="">Headphones </a></li>
+              <li class="categories_link"><a href="">Phụ kiện Marshall</a></li>
+            </ul>
+          </div>
+          <div style="margin-top: 40px" class="boxContent_Footer">
+            <div class="text_categories">
+              <p>Marshall VietNam</p>
+            </div>
+            <p class="desc_footer">Đại lý/ Dự án: 092.6562.888</p>
+            <p class="desc_footer">Mail: marshallstorevietnam.vn@gmail.com</p>
+            <p class="desc_footer">
+              Loca1: Đường Đông Hưng Thuận 2, p, Tân Hưng Thuận, Quận 12. TP.
+              HCM
+            </p>
+            <p class="desc_footer">
+              Loca1: Đường Đông Hưng Thuận 2, p, Tân Hưng Thuận, Quận 12. TP.
+              HCM
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <!-- <script type="module" src="../../app.js"></script> -->
+  <script type="module" src="logged.js"></script>
+  <script src="../../JS/HandleAccount/handleacc2.js"></script>
+  <!-- Jquerry -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.js"></script>
+</html>

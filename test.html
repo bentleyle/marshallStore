@@ -1,0 +1,73 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .jconfirm-box {
+      width: 400px;
+    }
+  </style>
+  <body>
+    <!-- <a class="product" data-brand="Long" data-wattage="20 Watt" href=""></a>
+    <a class="product" data-brand="Ben" data-wattage="20 Watt" href=""></a>
+    <p id="print"></p> -->
+    <button class="btn">Click me</button>
+  </body>
+  <script>
+    // const product = document.querySelectorAll(".product");
+    // const prints = document.getElementById("print");
+    // prints.innerHTML = "";
+    // product.forEach((element) => {
+    //   const brand = element.getAttribute("data-brand");
+    //   prints.innerHTML += brand;
+    // });
+    const btn = document.querySelector(".btn");
+    btn.addEventListener("click", function (e) {
+      $.confirm({
+        title: "Prompt!",
+        content:
+          "" +
+          '<form action="" class="formName">' +
+          '<div class="form-group">' +
+          "<label>Enter something here</label>" +
+          '<input type="text" placeholder="Your name" class="name form-control" required />' +
+          "</div>" +
+          "</form>",
+        buttons: {
+          formSubmit: {
+            text: "Submit",
+            btnClass: "btn-blue",
+            action: function () {
+              var name = this.$content.find(".name").val();
+              if (!name) {
+                $.alert("provide a valid name");
+                return false;
+              }
+              $.alert("Your name is " + name);
+            },
+          },
+          cancel: function () {
+            //close
+          },
+        },
+        boxClass: "my-custom-confirm",
+        onContentReady: function () {
+          // bind to events
+          var jc = this;
+          this.$content.find("form").on("submit", function (e) {
+            // if the user submits the form by pressing enter in the field.
+            e.preventDefault();
+            jc.$$formSubmit.trigger("click"); // reference the button and click it
+          });
+        },
+      });
+    });
+  </script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.js"></script>
+</html>

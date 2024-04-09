@@ -1,0 +1,53 @@
+.admin_main-left {
+  width: 25%;
+  height: 1500px;
+  background-color: black;
+  padding: 20px;
+}
+
+.controlTittle {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.controlTittle h2 {
+  color: white;
+  margin-left: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.boxHandle {
+  display: flex;
+  align-items: center;
+  padding: 50px;
+  transition: 0.2s;
+  width: 70%;
+}
+
+.boxHandle a {
+  margin-left: 30px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+}
+
+.boxHandle:hover {
+  background-color: white;
+  border-radius: 20px;
+  padding: 50px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.boxHandle:hover a {
+  color: black;
+}
+
+.boxHandle:hover img {
+  transform: scale(2);
+}

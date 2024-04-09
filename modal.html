@@ -1,0 +1,260 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      input {
+        width: 100%;
+        margin-top: 10px;
+        border-radius: 10px;
+        padding: 10px;
+        border: 1px solid white;
+        font-family: "Poppins", sans-serif;
+      }
+      input:focus-visible {
+        outline: none;
+      }
+      .container {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        background-color: rgba(0, 0, 0, 0.4);
+      }
+      .form-box {
+        width: 90%;
+        max-width: 450px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #221f1f;
+        padding: 10px;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.5);
+      }
+      .header_form {
+        display: flex;
+        justify-content: space-between;
+      }
+      .header_form h3 {
+        color: white;
+        font-weight: bold;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      .img_logo {
+        text-align: center;
+        margin-bottom: 10px;
+      }
+
+      hr {
+        margin-bottom: 10px;
+      }
+      .input-group {
+        margin: 0 auto;
+      }
+      .input-field {
+        margin-top: 15px;
+        position: relative;
+      }
+      .input-field p {
+        color: white;
+        font-family: "Poppins", sans-serif;
+        font-size: 14px;
+        margin-left: 5px;
+        font-weight: bold;
+      }
+
+      .input-field i {
+        position: absolute;
+        top: 38;
+        right: 10;
+        margin-left: 90px;
+      }
+
+      .input-field img {
+        position: absolute;
+        top: 38;
+        right: 10;
+        margin-left: 90px;
+      }
+      .support_account {
+        margin-top: 10px;
+        display: flex;
+        justify-content: flex-end;
+      }
+      .support_account a {
+        color: white;
+        text-decoration: none;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 14px;
+      }
+      .support_account a:hover {
+        text-decoration: underline;
+      }
+      .btn_control {
+        text-align: center;
+        padding: 10px 15px;
+        margin-top: 10px;
+        border-radius: 10px;
+        background-color: black;
+      }
+
+      .btn_control a {
+        font-size: 18px;
+        color: white;
+        font-weight: bold;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        text-decoration: none;
+      }
+
+      .btn_control:hover {
+        filter: brightness(50%);
+        transition: 0.5s;
+        cursor: pointer;
+      }
+
+      .support_Signup {
+        margin-top: 10px;
+        text-align: center;
+        font-size: 14px;
+        color: white;
+        font-family: "Poppins", sans-serif;
+        color: gray;
+      }
+
+      .support_SignIn {
+        margin-top: 10px;
+        text-align: center;
+        font-size: 14px;
+        color: white;
+        font-family: "Poppins", sans-serif;
+        color: gray;
+      }
+      strong a {
+        color: white;
+        text-decoration: none;
+      }
+
+      strong a:hover {
+        text-decoration: underline;
+      }
+      #name-field {
+        overflow: hidden;
+        max-height: 0px;
+        transition: max-height 0.5s;
+      }
+
+      #signIn-field {
+        display: none;
+      }
+      .forgot_account {
+        max-height: 20px;
+        overflow: hidden;
+        transition: max-height 0.5s;
+      }
+      #pass-visibile {
+        display: none;
+      }
+      /* Thêm CSS mới cho hiệu ứng */
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-box">
+        <div class="header_form">
+          <h3 class="tittle">Đăng nhập</h3>
+          <img src="/Image/cancel.png" width="29" height="29" alt="" />
+        </div>
+        <div class="img_logo">
+          <img src="Image/logo_footer.png" width="100" alt="" class="logo" />
+        </div>
+        <hr />
+        <form action="">
+          <div class="input-group">
+            <div class="input-field" id="name-field">
+              <p>Nhập tên của bạn</p>
+              <input type="email" placeholder="" />
+              <img src="./Image/user 1.png" width="15" alt="" />
+            </div>
+            <div class="input-field">
+              <p>Nhập địa chỉ email của bạn</p>
+              <input type="email" placeholder="" />
+              <img src="./Image/email.png" width="15" alt="" />
+            </div>
+            <div class="input-field">
+              <p>Nhập mật khẩu của bạn</p>
+              <input class="input_pass" type="password" placeholder="" />
+              <i class="fa-solid fa-eye-slash passIcon"></i>
+            </div>
+            <div class="support_account">
+              <div class="forgot_account">
+                <a href="">Quên mật khẩu?</a>
+              </div>
+            </div>
+            <div class="btn_control">
+              <a target="_blank" class="textAuth" href="#">Login</a>
+            </div>
+            <p class="support_signUp" id="signUp-field">
+              Nếu bạn chưa có tài khoản. Vui lòng?
+              <strong><a href="#">Đăng ký</a></strong>
+            </p>
+            <p class="support_signIn isActive" id="signIn-field">
+              Nếu bạn đã có tài khoản. Vui lòng?
+              <strong><a href="#">Đăng nhập</a></strong>
+            </p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+  <script>
+    let nameField = document.getElementById("name-field");
+    const SignUp = document.getElementById("signUp-field");
+    const SignIn = document.getElementById("signIn-field");
+    let forgotPass = document.querySelector(".forgot_account");
+    let tittle = document.querySelector(".tittle");
+    let textAuth = document.querySelector(".textAuth");
+
+    const input_pass = document.querySelector(".input_pass");
+    const passIcon = document.querySelector(".passIcon");
+    passIcon.addEventListener("click", function (e) {
+      if (input_pass.type === "password") {
+        input_pass.type = "text";
+        passIcon.classList.toggle("fa-eye");
+        passIcon.classList.toggle("fa-eye-slash");
+      } else {
+        input_pass.type = "password";
+
+        passIcon.classList.toggle("fa-eye");
+        passIcon.classList.toggle("fa-eye-slash");
+      }
+    });
+    SignUp.addEventListener("click", function (e) {
+      nameField.style.maxHeight = "65px";
+      SignUp.style.display = "none";
+      SignIn.style.display = "block";
+      forgotPass.style.maxHeight = "0px";
+      tittle.innerHTML = "Đăng ký";
+      textAuth.innerHTML = "Sign Up";
+    });
+    SignIn.addEventListener("click", function (e) {
+      nameField.style.maxHeight = "0px";
+      SignIn.style.display = "none";
+      SignUp.style.display = "block";
+      forgotPass.style.maxHeight = "20px";
+      tittle.innerHTML = "Đăng nhập";
+      textAuth.innerHTML = "Login";
+    });
+  </script>
+</html>

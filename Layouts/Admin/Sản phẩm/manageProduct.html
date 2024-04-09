@@ -1,0 +1,231 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../../../CSS/Admin/SanPham/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="admin_main">
+        <div class="bgr inactive"></div>
+        <div class="bgr2 inactive"></div>
+        <div class="admin_main-left">
+          <div class="img_logo">
+            <center>
+              <img src="../../../Image/logo_footer.png" width="200" alt="" />
+            </center>
+            <div class="controlTittle">
+              <img
+                style="color: white"
+                src="../../../Image/wrench.png"
+                width="35"
+                alt="" />
+              <h2>Danh mục quản lý</h2>
+            </div>
+          </div>
+          <div class="adminHandle">
+            <div class="boxHandle">
+              <img src="../../../Image/packaging 1.png" width="30" alt="" />
+              <a href="../../Admin/Sản phẩm/manageProduct.html">Sản phẩm</a>
+            </div>
+            <div class="boxHandle">
+              <img src="../../../Image/useradmin.png" width="30" alt="" />
+              <a href="../../Admin/Account/account.html">Tài khoản</a>
+            </div>
+            <div class="boxHandle">
+              <img src="../../../Image/info 1.png" width="30" alt="" />
+              <a href="../../Admin/Statiscal/statiscal.html">Thống kê</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="admin_main-right">
+          <h1
+            style="
+              text-align: center;
+              font-weight: bold;
+              font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+              font-size: 40px;
+            ">
+            Quản lý Sản Phẩm
+          </h1>
+          <a class="linkAdd" style="float: right" href="#">+</a>
+          <div class="admin_Manage">
+            <table>
+              <thead>
+                <th>STT</th>
+                <th>Loại sản phẩm</th>
+                <th>Tên sản phẩm</th>
+                <th>Tùy chọn</th>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="overflow: auto; max-height: 500px" class="form-box">
+      <table>
+        <center>
+          <h1
+            style="
+              text-align: center;
+              font-weight: bold;
+              font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+              padding: 10px;
+              color: white;
+              background-color: black;
+              border-radius: 10px;
+              width: 210px;
+            ">
+            THÊM SẢN PHẨM
+          </h1>
+        </center>
+        <div class="addForm">
+          <label>Tên sản phẩm</label>
+          <input type="text" id="nameProduct" name="nameProduct" />
+
+          <label>Loại sản phẩm</label>
+          <!-- <input type="text" id="type" name="type" /> -->
+          <select name="" id="selectType">
+            <option value="#">Chọn loại</option>
+            <option value="Loa">Loa</option>
+            <option value="Tai Nghe">Tai Nghe</option>
+          </select>
+          <label>Giá</label>
+          <input type="text" id="price" name="price" />
+
+          <label>Mô tả 1 </label>
+          <input type="text" id="desc1" name="desc1" />
+
+          <label>Mô tả 2 </label>
+          <input type="text" id="desc2" name="desc2" />
+
+          <label>Hình ảnh</label> <br />
+          <br />
+          <input type="file" id="getImg" name="img" /> <br />
+          <br />
+
+          <label>Màu</label>
+          <input type="text" id="color" name="color" />
+
+          <label>Âm thanh</label>
+          <input type="text" id="sound" name="sound" />
+
+          <label>Xuất xứ</label>
+          <input type="text" id="brand" name="brand" />
+
+          <label>Công suất</label>
+          <input type="text" id="watt" name="watt" />
+
+          <label>Tần số</label>
+          <input type="text" id="fre" name="fre" />
+
+          <label>Ứng dụng hỗ trợ</label>
+          <input type="text" id="supportApp" name="supportApp" />
+
+          <label>Kết nối có dây</label>
+          <input type="text" id="wired" name="wired" />
+
+          <label>Kết nối không dây</label>
+          <input type="text" id="unwired" name="unwired" />
+
+          <label>Kích thước</label>
+          <input type="text" id="size" name="size" />
+
+          <label>Trọng lượng</label>
+          <input type="text" id="weight" name="weight" />
+
+          <input type="button" class="btnSubmit" value="Submit" />
+        </div>
+      </table>
+    </div>
+    <!-- FORM BOX2 -->
+    <div style="overflow: auto; max-height: 500px" class="form-box2">
+      <table>
+        <center>
+          <h1
+            style="
+              text-align: center;
+              font-weight: bold;
+              font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+              padding: 10px;
+              color: white;
+              background-color: black;
+              border-radius: 10px;
+              width: 210px;
+            ">
+            SỬA SẢN PHẨM
+          </h1>
+        </center>
+        <div class="addForm">
+          <label>Tên sản phẩm</label>
+          <input type="text" id="nameProductEdit" name="nameProduct" />
+
+          <label>Loại sản phẩm</label>
+          <!-- <input type="text" id="type" name="type" /> -->
+          <select name="" id="selectTypeProductEdit">
+            <option value="#">Chọn loại</option>
+            <option value="Loa">Loa</option>
+            <option value="Tai Nghe">Tai Nghe</option>
+          </select>
+          <label>Giá</label>
+          <input type="text" id="priceProductEdit" name="price" />
+
+          <label>Mô tả 1 </label>
+          <input type="text" id="desc1ProductEdit" name="desc1" />
+
+          <label>Mô tả 2 </label>
+          <input type="text" id="desc2ProductEdit" name="desc2" />
+
+          <label>Hình ảnh</label> <br />
+          <br />
+          <input type="file" id="getImgProductEdit" name="img" /> <br />
+          <br />
+
+          <label>Màu</label>
+          <input type="text" id="colorProductEdit" name="color" />
+
+          <label>Âm thanh</label>
+          <input type="text" id="soundProductEdit" name="sound" />
+
+          <label>Xuất xứ</label>
+          <input type="text" id="brandProductEdit" name="brand" />
+
+          <label>Công suất</label>
+          <input type="text" id="wattProductEdit" name="watt" />
+
+          <label>Tần số</label>
+          <input type="text" id="freProductEdit" name="fre" />
+
+          <label>Ứng dụng hỗ trợ</label>
+          <input type="text" id="supportAppEdit" name="supportApp" />
+
+          <label>Kết nối có dây</label>
+          <input type="text" id="wiredProductEdit" name="wired" />
+
+          <label>Kết nối không dây</label>
+          <input type="text" id="unwiredProductEdit" name="unwired" />
+
+          <label>Kích thước</label>
+          <input type="text" id="sizeProductEdit" name="size" />
+
+          <label>Trọng lượng</label>
+          <input type="text" id="weightProductEdit" name="weight" />
+
+          <input type="button" id="submitButton" value="Submit" />
+        </div>
+      </table>
+    </div>
+  </body>
+  <script
+    type="module"
+    src="../../../JS/Admin/ManageProduct/ManageProduct.js"></script>
+  <!-- Jquerry -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.js"></script>
+</html>

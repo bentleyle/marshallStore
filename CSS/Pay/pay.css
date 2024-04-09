@@ -1,0 +1,266 @@
+/* MENU */
+@import "../../CSS/Menu-MenuAuth/menu.css";
+/* MODAL */
+@import "../../CSS/Modal-FormBox/modal.css";
+/* MAIN */
+@import "../../CSS/Main/main.css";
+/* FOOTER */
+@import "../../CSS/Footer/footer.css";
+@import url("https://fonts.googleapis.com/css2?family=Onest&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+
+*,
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+input,
+select,
+textarea {
+  background-color: transparent;
+  outline: none;
+}
+button {
+  cursor: pointer;
+  background-color: transparent;
+  outline: none;
+  border: 0;
+}
+body {
+  min-height: 100vh;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+}
+
+.page-title {
+  margin-top: 10px;
+  background-color: black;
+  height: 156px;
+  display: flex;
+  align-items: center;
+}
+
+.page_item {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.page_item a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-family: "Onest", sans-serif;
+  letter-spacing: 4px;
+  font-size: 35px;
+  margin-left: 20px;
+}
+
+.fa-solid {
+  color: white;
+}
+.page_item .shopping_text:hover {
+  color: white; /* Đổi màu chữ khi hover */
+  cursor: pointer; /* Đổi con trỏ chuột thành "pointer" khi hover, cho biết đó là một liên kết có thể nhấp vào */
+}
+.page_item .shopping_text {
+  color: gray; /* Đổi màu chữ khi không hover */
+}
+
+.page_item .shopping_text:hover {
+  color: white; /* Đổi màu chữ khi hover */
+  cursor: pointer; /* Đổi con trỏ chuột thành "pointer" khi hover, cho biết đó là một liên kết có thể nhấp vào */
+}
+
+.page-bill {
+  /* background-color: gray; */
+  margin-top: 20px;
+  border-radius: 10px;
+  display: flex;
+}
+
+.bill-details {
+  width: 60%;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+}
+
+.bill-details h1 {
+  font-family: "Onest", sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 20px;
+}
+
+.bill-details .details {
+  margin-top: 30px;
+}
+
+.bill-details .details .details-group {
+  display: flex;
+  flex-direction: column;
+}
+.bill-details .details .details-group label {
+  font-size: 15px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.bill-details .details input {
+  width: 60%;
+  margin-bottom: 10px;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+.bill-details .details input:focus-visible {
+  outline: none;
+}
+.bill-details .details .details-group textarea {
+  margin-top: 10px;
+  border: 1px solid gray;
+  padding: 10px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.bill-details .policy h1 {
+  margin-bottom: 10px;
+}
+.bill-details .policy {
+  margin-top: 20px;
+}
+
+.bill-details .policy p {
+  color: gray;
+  font-family: "Open Sans", sans-serif;
+  line-height: 25px;
+  background-color: #f4f0f0;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+.bill-details .policy strong {
+  color: black;
+  font-weight: bold;
+}
+
+.bill-details .policy .btnOrder {
+  margin-top: 20px;
+  background-color: black;
+  color: white;
+  width: 100%;
+  padding: 15px;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.bill-details .policy .btnOrder:hover {
+  opacity: 80%;
+  transition: 0.2s;
+}
+.your-order {
+  width: 40%;
+  margin-left: 10px;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.your-order h1 {
+  font-family: "Onest", sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 20px;
+}
+
+.your-order .title-Order {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.your-order .title-Order p {
+  font-family: bold;
+  font-family: "Onest", sans-serif;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.your-order .yourProduct {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.your-order .yourProduct .eventProduct {
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+}
+
+.your-order .yourProduct .eventProduct img {
+  margin-left: 10px;
+}
+
+.your-order .yourProduct p {
+  font-weight: bold;
+  font-family: "Onest", sans-serif;
+}
+
+.your-order .delivery {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Onest", sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+}
+.your-order .total {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Onest", sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  margin-top: 30px;
+}
+
+.deliveryPolicy {
+  margin-top: 30px;
+}
+
+.deliveryPolicy h1 {
+  margin-bottom: 30px;
+}
+
+.deliveryPolicy p {
+  color: black;
+  font-weight: bold;
+  font-family: "Onest", sans-serif;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.deliveryPolicy span {
+  line-height: 25px;
+  color: gray;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}

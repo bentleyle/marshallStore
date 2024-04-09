@@ -1,0 +1,26 @@
+.mostBuy {
+  width: 200px;
+  text-align: center;
+  color: white;
+  background-color: black;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 10px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+}
+.table2 {
+  /* margin-top: 120px; */
+}
+.soldProduct {
+  margin-top: 50px;
+  text-align: center;
+  width: 200px;
+  color: white;
+  background-color: black;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 10px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+}

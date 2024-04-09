@@ -1,0 +1,21 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button class="cta" id="btn">ádasdasd</button>
+    <div id="popup" style="display: none">
+      <p>Đây là nội dung của popup.</p>
+    </div>
+  </body>
+  <script>
+    var btn = document.getElementById("btn");
+    var popup = document.getElementById("popup");
+    btn.addEventListener("click", function () {
+      // Hiển thị popup
+      popup.style.display = "block";
+    });
+  </script>
+</html>

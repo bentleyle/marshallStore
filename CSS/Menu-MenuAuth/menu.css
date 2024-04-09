@@ -1,0 +1,113 @@
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  /* margin-top: 10px; */
+  position: fixed; /* Để menu cố định trên màn hình */
+  top: -0; /* Đặt top thành 0 để menu ở trên cùng */
+  width: 100%; /* Đặt chiều rộng là 100% để menu chiếm toàn bộ chiều ngang */
+  z-index: 1000; /* Đặt z-index cao hơn để đảm bảo menu hiển thị trên các phần khác của trang */
+  /* Các thuộc tính khác của menu */
+}
+
+.menu_leftItem {
+  display: flex;
+  align-items: center;
+  color: gray;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.menu_leftItem p {
+  margin-left: 10px;
+  width: 227px;
+  line-height: 25px;
+}
+
+.menu_rightItem {
+  display: flex;
+  align-items: center;
+}
+
+.phone_menuText {
+  margin-left: 10px;
+  color: gray;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 20px;
+}
+
+/* MENU AUTH */
+
+.menu_auth {
+  height: 60px;
+  background-color: black;
+  margin-top: 10px;
+  position: fixed; /* Để menu_auth cố định trên màn hình */
+  top: 65px; /* Đặt top thành 60px để menu_auth ở dưới menu */
+  width: 100%; /* Đặt chiều rộng là 100% để menu_auth chiếm toàn bộ chiều ngang */
+  z-index: 1000; /* Đặt z-index cao hơn để đảm bảo menu_auth hiển thị trên các phần khác của trang */
+  /* Các thuộc tính khác của menu_auth */
+}
+
+.menu_auth {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu_authLeftItem {
+  display: flex;
+  align-items: center;
+}
+
+.menu_authLeftItem a {
+  margin-left: 15px;
+  color: gray;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.menu_authLeftItem a:hover {
+  transition: 0.5s;
+  color: white;
+}
+
+.menu_authRightItem {
+  display: flex;
+  margin-right: 15px;
+  align-items: center;
+}
+.menu_authRightItem p {
+  color: white;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+#logOut:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  color: red;
+}
+.input_search {
+  display: flex;
+  position: relative;
+  margin-right: 20px;
+}
+
+.search_icon {
+  position: absolute;
+  top: 14;
+  right: 15;
+}
+
+.menu_authRightItem input {
+  background-color: white;
+  border-radius: 50px;
+  border: 0;
+  padding: 8px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.user_icon,
+.cart_icon {
+  margin-right: 15px;
+}
